@@ -154,189 +154,6 @@ class SwigPyIterator(_object):
 SwigPyIterator_swigregister = _CVXcanon.SwigPyIterator_swigregister
 SwigPyIterator_swigregister(SwigPyIterator)
 
-
-_CVXcanon.VARIABLE_swigconstant(_CVXcanon)
-VARIABLE = _CVXcanon.VARIABLE
-
-_CVXcanon.PROMOTE_swigconstant(_CVXcanon)
-PROMOTE = _CVXcanon.PROMOTE
-
-_CVXcanon.MUL_swigconstant(_CVXcanon)
-MUL = _CVXcanon.MUL
-
-_CVXcanon.RMUL_swigconstant(_CVXcanon)
-RMUL = _CVXcanon.RMUL
-
-_CVXcanon.MUL_ELEM_swigconstant(_CVXcanon)
-MUL_ELEM = _CVXcanon.MUL_ELEM
-
-_CVXcanon.DIV_swigconstant(_CVXcanon)
-DIV = _CVXcanon.DIV
-
-_CVXcanon.SUM_swigconstant(_CVXcanon)
-SUM = _CVXcanon.SUM
-
-_CVXcanon.NEG_swigconstant(_CVXcanon)
-NEG = _CVXcanon.NEG
-
-_CVXcanon.INDEX_swigconstant(_CVXcanon)
-INDEX = _CVXcanon.INDEX
-
-_CVXcanon.TRANSPOSE_swigconstant(_CVXcanon)
-TRANSPOSE = _CVXcanon.TRANSPOSE
-
-_CVXcanon.SUM_ENTRIES_swigconstant(_CVXcanon)
-SUM_ENTRIES = _CVXcanon.SUM_ENTRIES
-
-_CVXcanon.TRACE_swigconstant(_CVXcanon)
-TRACE = _CVXcanon.TRACE
-
-_CVXcanon.RESHAPE_swigconstant(_CVXcanon)
-RESHAPE = _CVXcanon.RESHAPE
-
-_CVXcanon.DIAG_VEC_swigconstant(_CVXcanon)
-DIAG_VEC = _CVXcanon.DIAG_VEC
-
-_CVXcanon.DIAG_MAT_swigconstant(_CVXcanon)
-DIAG_MAT = _CVXcanon.DIAG_MAT
-
-_CVXcanon.UPPER_TRI_swigconstant(_CVXcanon)
-UPPER_TRI = _CVXcanon.UPPER_TRI
-
-_CVXcanon.CONV_swigconstant(_CVXcanon)
-CONV = _CVXcanon.CONV
-
-_CVXcanon.HSTACK_swigconstant(_CVXcanon)
-HSTACK = _CVXcanon.HSTACK
-
-_CVXcanon.VSTACK_swigconstant(_CVXcanon)
-VSTACK = _CVXcanon.VSTACK
-
-_CVXcanon.SCALAR_CONST_swigconstant(_CVXcanon)
-SCALAR_CONST = _CVXcanon.SCALAR_CONST
-
-_CVXcanon.DENSE_CONST_swigconstant(_CVXcanon)
-DENSE_CONST = _CVXcanon.DENSE_CONST
-
-_CVXcanon.SPARSE_CONST_swigconstant(_CVXcanon)
-SPARSE_CONST = _CVXcanon.SPARSE_CONST
-
-_CVXcanon.NO_OP_swigconstant(_CVXcanon)
-NO_OP = _CVXcanon.NO_OP
-
-_CVXcanon.KRON_swigconstant(_CVXcanon)
-KRON = _CVXcanon.KRON
-class LinOp(_object):
-    __swig_setmethods__ = {}
-    __setattr__ = lambda self, name, value: _swig_setattr(self, LinOp, name, value)
-    __swig_getmethods__ = {}
-    __getattr__ = lambda self, name: _swig_getattr(self, LinOp, name)
-    __repr__ = _swig_repr
-    __swig_setmethods__["type"] = _CVXcanon.LinOp_type_set
-    __swig_getmethods__["type"] = _CVXcanon.LinOp_type_get
-    if _newclass:
-        type = _swig_property(_CVXcanon.LinOp_type_get, _CVXcanon.LinOp_type_set)
-    __swig_setmethods__["size"] = _CVXcanon.LinOp_size_set
-    __swig_getmethods__["size"] = _CVXcanon.LinOp_size_get
-    if _newclass:
-        size = _swig_property(_CVXcanon.LinOp_size_get, _CVXcanon.LinOp_size_set)
-    __swig_setmethods__["args"] = _CVXcanon.LinOp_args_set
-    __swig_getmethods__["args"] = _CVXcanon.LinOp_args_get
-    if _newclass:
-        args = _swig_property(_CVXcanon.LinOp_args_get, _CVXcanon.LinOp_args_set)
-    __swig_setmethods__["sparse"] = _CVXcanon.LinOp_sparse_set
-    __swig_getmethods__["sparse"] = _CVXcanon.LinOp_sparse_get
-    if _newclass:
-        sparse = _swig_property(_CVXcanon.LinOp_sparse_get, _CVXcanon.LinOp_sparse_set)
-    __swig_setmethods__["sparse_data"] = _CVXcanon.LinOp_sparse_data_set
-    __swig_getmethods__["sparse_data"] = _CVXcanon.LinOp_sparse_data_get
-    if _newclass:
-        sparse_data = _swig_property(_CVXcanon.LinOp_sparse_data_get, _CVXcanon.LinOp_sparse_data_set)
-    __swig_setmethods__["dense_data"] = _CVXcanon.LinOp_dense_data_set
-    __swig_getmethods__["dense_data"] = _CVXcanon.LinOp_dense_data_get
-    if _newclass:
-        dense_data = _swig_property(_CVXcanon.LinOp_dense_data_get, _CVXcanon.LinOp_dense_data_set)
-    __swig_setmethods__["slice"] = _CVXcanon.LinOp_slice_set
-    __swig_getmethods__["slice"] = _CVXcanon.LinOp_slice_get
-    if _newclass:
-        slice = _swig_property(_CVXcanon.LinOp_slice_get, _CVXcanon.LinOp_slice_set)
-
-    def __init__(self):
-        this = _CVXcanon.new_LinOp()
-        try:
-            self.this.append(this)
-        except Exception:
-            self.this = this
-
-    def has_constant_type(self):
-        return _CVXcanon.LinOp_has_constant_type(self)
-
-    def set_dense_data(self, matrix):
-        return _CVXcanon.LinOp_set_dense_data(self, matrix)
-
-    def set_sparse_data(self, data, row_idxs, col_idxs, rows, cols):
-        return _CVXcanon.LinOp_set_sparse_data(self, data, row_idxs, col_idxs, rows, cols)
-    __swig_destroy__ = _CVXcanon.delete_LinOp
-    __del__ = lambda self: None
-LinOp_swigregister = _CVXcanon.LinOp_swigregister
-LinOp_swigregister(LinOp)
-cvar = _CVXcanon.cvar
-CONSTANT_ID = cvar.CONSTANT_ID
-
-class ProblemData(_object):
-    __swig_setmethods__ = {}
-    __setattr__ = lambda self, name, value: _swig_setattr(self, ProblemData, name, value)
-    __swig_getmethods__ = {}
-    __getattr__ = lambda self, name: _swig_getattr(self, ProblemData, name)
-    __repr__ = _swig_repr
-    __swig_setmethods__["V"] = _CVXcanon.ProblemData_V_set
-    __swig_getmethods__["V"] = _CVXcanon.ProblemData_V_get
-    if _newclass:
-        V = _swig_property(_CVXcanon.ProblemData_V_get, _CVXcanon.ProblemData_V_set)
-    __swig_setmethods__["I"] = _CVXcanon.ProblemData_I_set
-    __swig_getmethods__["I"] = _CVXcanon.ProblemData_I_get
-    if _newclass:
-        I = _swig_property(_CVXcanon.ProblemData_I_get, _CVXcanon.ProblemData_I_set)
-    __swig_setmethods__["J"] = _CVXcanon.ProblemData_J_set
-    __swig_getmethods__["J"] = _CVXcanon.ProblemData_J_get
-    if _newclass:
-        J = _swig_property(_CVXcanon.ProblemData_J_get, _CVXcanon.ProblemData_J_set)
-    __swig_setmethods__["const_vec"] = _CVXcanon.ProblemData_const_vec_set
-    __swig_getmethods__["const_vec"] = _CVXcanon.ProblemData_const_vec_get
-    if _newclass:
-        const_vec = _swig_property(_CVXcanon.ProblemData_const_vec_get, _CVXcanon.ProblemData_const_vec_set)
-    __swig_setmethods__["id_to_col"] = _CVXcanon.ProblemData_id_to_col_set
-    __swig_getmethods__["id_to_col"] = _CVXcanon.ProblemData_id_to_col_get
-    if _newclass:
-        id_to_col = _swig_property(_CVXcanon.ProblemData_id_to_col_get, _CVXcanon.ProblemData_id_to_col_set)
-    __swig_setmethods__["const_to_row"] = _CVXcanon.ProblemData_const_to_row_set
-    __swig_getmethods__["const_to_row"] = _CVXcanon.ProblemData_const_to_row_get
-    if _newclass:
-        const_to_row = _swig_property(_CVXcanon.ProblemData_const_to_row_get, _CVXcanon.ProblemData_const_to_row_set)
-
-    def getV(self, values):
-        return _CVXcanon.ProblemData_getV(self, values)
-
-    def getI(self, values):
-        return _CVXcanon.ProblemData_getI(self, values)
-
-    def getJ(self, values):
-        return _CVXcanon.ProblemData_getJ(self, values)
-
-    def getConstVec(self, values):
-        return _CVXcanon.ProblemData_getConstVec(self, values)
-
-    def __init__(self):
-        this = _CVXcanon.new_ProblemData()
-        try:
-            self.this.append(this)
-        except Exception:
-            self.this = this
-    __swig_destroy__ = _CVXcanon.delete_ProblemData
-    __del__ = lambda self: None
-ProblemData_swigregister = _CVXcanon.ProblemData_swigregister
-ProblemData_swigregister(ProblemData)
-
 class IntVector(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, IntVector, name, value)
@@ -1017,10 +834,603 @@ class LinOpVector(_object):
 LinOpVector_swigregister = _CVXcanon.LinOpVector_swigregister
 LinOpVector_swigregister(LinOpVector)
 
+class ExpressionVector(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ExpressionVector, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ExpressionVector, name)
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _CVXcanon.ExpressionVector_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _CVXcanon.ExpressionVector___nonzero__(self)
+
+    def __bool__(self):
+        return _CVXcanon.ExpressionVector___bool__(self)
+
+    def __len__(self):
+        return _CVXcanon.ExpressionVector___len__(self)
+
+    def __getslice__(self, i, j):
+        return _CVXcanon.ExpressionVector___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _CVXcanon.ExpressionVector___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _CVXcanon.ExpressionVector___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _CVXcanon.ExpressionVector___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _CVXcanon.ExpressionVector___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _CVXcanon.ExpressionVector___setitem__(self, *args)
+
+    def pop(self):
+        return _CVXcanon.ExpressionVector_pop(self)
+
+    def append(self, x):
+        return _CVXcanon.ExpressionVector_append(self, x)
+
+    def empty(self):
+        return _CVXcanon.ExpressionVector_empty(self)
+
+    def size(self):
+        return _CVXcanon.ExpressionVector_size(self)
+
+    def swap(self, v):
+        return _CVXcanon.ExpressionVector_swap(self, v)
+
+    def begin(self):
+        return _CVXcanon.ExpressionVector_begin(self)
+
+    def end(self):
+        return _CVXcanon.ExpressionVector_end(self)
+
+    def rbegin(self):
+        return _CVXcanon.ExpressionVector_rbegin(self)
+
+    def rend(self):
+        return _CVXcanon.ExpressionVector_rend(self)
+
+    def clear(self):
+        return _CVXcanon.ExpressionVector_clear(self)
+
+    def get_allocator(self):
+        return _CVXcanon.ExpressionVector_get_allocator(self)
+
+    def pop_back(self):
+        return _CVXcanon.ExpressionVector_pop_back(self)
+
+    def erase(self, *args):
+        return _CVXcanon.ExpressionVector_erase(self, *args)
+
+    def __init__(self, *args):
+        this = _CVXcanon.new_ExpressionVector(*args)
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+
+    def push_back(self, x):
+        return _CVXcanon.ExpressionVector_push_back(self, x)
+
+    def front(self):
+        return _CVXcanon.ExpressionVector_front(self)
+
+    def back(self):
+        return _CVXcanon.ExpressionVector_back(self)
+
+    def assign(self, n, x):
+        return _CVXcanon.ExpressionVector_assign(self, n, x)
+
+    def resize(self, *args):
+        return _CVXcanon.ExpressionVector_resize(self, *args)
+
+    def insert(self, *args):
+        return _CVXcanon.ExpressionVector_insert(self, *args)
+
+    def reserve(self, n):
+        return _CVXcanon.ExpressionVector_reserve(self, n)
+
+    def capacity(self):
+        return _CVXcanon.ExpressionVector_capacity(self)
+    __swig_destroy__ = _CVXcanon.delete_ExpressionVector
+    __del__ = lambda self: None
+ExpressionVector_swigregister = _CVXcanon.ExpressionVector_swigregister
+ExpressionVector_swigregister(ExpressionVector)
+
 
 def build_matrix(*args):
     return _CVXcanon.build_matrix(*args)
 build_matrix = _CVXcanon.build_matrix
+class ExpressionAttributes(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ExpressionAttributes, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ExpressionAttributes, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _CVXcanon.delete_ExpressionAttributes
+    __del__ = lambda self: None
+
+    def __init__(self):
+        this = _CVXcanon.new_ExpressionAttributes()
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+ExpressionAttributes_swigregister = _CVXcanon.ExpressionAttributes_swigregister
+ExpressionAttributes_swigregister(ExpressionAttributes)
+
+class Expression(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, Expression, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, Expression, name)
+    __repr__ = _swig_repr
+    ADD = _CVXcanon.Expression_ADD
+    HSTACK = _CVXcanon.Expression_HSTACK
+    INDEX = _CVXcanon.Expression_INDEX
+    MUL = _CVXcanon.Expression_MUL
+    NEG = _CVXcanon.Expression_NEG
+    RESHAPE = _CVXcanon.Expression_RESHAPE
+    SUM = _CVXcanon.Expression_SUM
+    VSTACK = _CVXcanon.Expression_VSTACK
+    ABS = _CVXcanon.Expression_ABS
+    P_NORM = _CVXcanon.Expression_P_NORM
+    QUAD_OVER_LIN = _CVXcanon.Expression_QUAD_OVER_LIN
+    EQ = _CVXcanon.Expression_EQ
+    LEQ = _CVXcanon.Expression_LEQ
+    SOC = _CVXcanon.Expression_SOC
+    CONST = _CVXcanon.Expression_CONST
+    VAR = _CVXcanon.Expression_VAR
+
+    def type(self):
+        return _CVXcanon.Expression_type(self)
+
+    def args(self):
+        return _CVXcanon.Expression_args(self)
+
+    def arg(self, i):
+        return _CVXcanon.Expression_arg(self, i)
+
+    def attr_ptr(self):
+        return _CVXcanon.Expression_attr_ptr(self)
+
+    def __init__(self, *args):
+        this = _CVXcanon.new_Expression(*args)
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+    __swig_destroy__ = _CVXcanon.delete_Expression
+    __del__ = lambda self: None
+Expression_swigregister = _CVXcanon.Expression_swigregister
+Expression_swigregister(Expression)
+
+class Size(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, Size, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, Size, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["dims"] = _CVXcanon.Size_dims_set
+    __swig_getmethods__["dims"] = _CVXcanon.Size_dims_get
+    if _newclass:
+        dims = _swig_property(_CVXcanon.Size_dims_get, _CVXcanon.Size_dims_set)
+
+    def __init__(self):
+        this = _CVXcanon.new_Size()
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+    __swig_destroy__ = _CVXcanon.delete_Size
+    __del__ = lambda self: None
+Size_swigregister = _CVXcanon.Size_swigregister
+Size_swigregister(Size)
+
+class Problem(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, Problem, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, Problem, name)
+    __repr__ = _swig_repr
+    MAXIMIZE = _CVXcanon.Problem_MAXIMIZE
+    MINIMIZE = _CVXcanon.Problem_MINIMIZE
+
+    def __init__(self, *args):
+        this = _CVXcanon.new_Problem(*args)
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+    __swig_setmethods__["sense"] = _CVXcanon.Problem_sense_set
+    __swig_getmethods__["sense"] = _CVXcanon.Problem_sense_get
+    if _newclass:
+        sense = _swig_property(_CVXcanon.Problem_sense_get, _CVXcanon.Problem_sense_set)
+    __swig_setmethods__["objective"] = _CVXcanon.Problem_objective_set
+    __swig_getmethods__["objective"] = _CVXcanon.Problem_objective_get
+    if _newclass:
+        objective = _swig_property(_CVXcanon.Problem_objective_get, _CVXcanon.Problem_objective_set)
+    __swig_setmethods__["constraints"] = _CVXcanon.Problem_constraints_set
+    __swig_getmethods__["constraints"] = _CVXcanon.Problem_constraints_get
+    if _newclass:
+        constraints = _swig_property(_CVXcanon.Problem_constraints_get, _CVXcanon.Problem_constraints_set)
+    __swig_destroy__ = _CVXcanon.delete_Problem
+    __del__ = lambda self: None
+Problem_swigregister = _CVXcanon.Problem_swigregister
+Problem_swigregister(Problem)
+
+class ConstAttributes(ExpressionAttributes):
+    __swig_setmethods__ = {}
+    for _s in [ExpressionAttributes]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ConstAttributes, name, value)
+    __swig_getmethods__ = {}
+    for _s in [ExpressionAttributes]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, ConstAttributes, name)
+    __repr__ = _swig_repr
+
+    def set_dense_data(self, matrix):
+        return _CVXcanon.ConstAttributes_set_dense_data(self, matrix)
+
+    def size(self):
+        return _CVXcanon.ConstAttributes_size(self)
+    __swig_setmethods__["dense_data"] = _CVXcanon.ConstAttributes_dense_data_set
+    __swig_getmethods__["dense_data"] = _CVXcanon.ConstAttributes_dense_data_get
+    if _newclass:
+        dense_data = _swig_property(_CVXcanon.ConstAttributes_dense_data_get, _CVXcanon.ConstAttributes_dense_data_set)
+
+    def __init__(self):
+        this = _CVXcanon.new_ConstAttributes()
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+    __swig_destroy__ = _CVXcanon.delete_ConstAttributes
+    __del__ = lambda self: None
+ConstAttributes_swigregister = _CVXcanon.ConstAttributes_swigregister
+ConstAttributes_swigregister(ConstAttributes)
+
+class VarAttributes(ExpressionAttributes):
+    __swig_setmethods__ = {}
+    for _s in [ExpressionAttributes]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, VarAttributes, name, value)
+    __swig_getmethods__ = {}
+    for _s in [ExpressionAttributes]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, VarAttributes, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["id"] = _CVXcanon.VarAttributes_id_set
+    __swig_getmethods__["id"] = _CVXcanon.VarAttributes_id_get
+    if _newclass:
+        id = _swig_property(_CVXcanon.VarAttributes_id_get, _CVXcanon.VarAttributes_id_set)
+    __swig_setmethods__["size"] = _CVXcanon.VarAttributes_size_set
+    __swig_getmethods__["size"] = _CVXcanon.VarAttributes_size_get
+    if _newclass:
+        size = _swig_property(_CVXcanon.VarAttributes_size_get, _CVXcanon.VarAttributes_size_set)
+
+    def __init__(self):
+        this = _CVXcanon.new_VarAttributes()
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+    __swig_destroy__ = _CVXcanon.delete_VarAttributes
+    __del__ = lambda self: None
+VarAttributes_swigregister = _CVXcanon.VarAttributes_swigregister
+VarAttributes_swigregister(VarAttributes)
+
+class PNormAttributes(ExpressionAttributes):
+    __swig_setmethods__ = {}
+    for _s in [ExpressionAttributes]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, PNormAttributes, name, value)
+    __swig_getmethods__ = {}
+    for _s in [ExpressionAttributes]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, PNormAttributes, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["p"] = _CVXcanon.PNormAttributes_p_set
+    __swig_getmethods__["p"] = _CVXcanon.PNormAttributes_p_get
+    if _newclass:
+        p = _swig_property(_CVXcanon.PNormAttributes_p_get, _CVXcanon.PNormAttributes_p_set)
+
+    def __init__(self):
+        this = _CVXcanon.new_PNormAttributes()
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+    __swig_destroy__ = _CVXcanon.delete_PNormAttributes
+    __del__ = lambda self: None
+PNormAttributes_swigregister = _CVXcanon.PNormAttributes_swigregister
+PNormAttributes_swigregister(PNormAttributes)
+
+class ReshapeAttributes(ExpressionAttributes):
+    __swig_setmethods__ = {}
+    for _s in [ExpressionAttributes]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ReshapeAttributes, name, value)
+    __swig_getmethods__ = {}
+    for _s in [ExpressionAttributes]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, ReshapeAttributes, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["size"] = _CVXcanon.ReshapeAttributes_size_set
+    __swig_getmethods__["size"] = _CVXcanon.ReshapeAttributes_size_get
+    if _newclass:
+        size = _swig_property(_CVXcanon.ReshapeAttributes_size_get, _CVXcanon.ReshapeAttributes_size_set)
+
+    def __init__(self):
+        this = _CVXcanon.new_ReshapeAttributes()
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+    __swig_destroy__ = _CVXcanon.delete_ReshapeAttributes
+    __del__ = lambda self: None
+ReshapeAttributes_swigregister = _CVXcanon.ReshapeAttributes_swigregister
+ReshapeAttributes_swigregister(ReshapeAttributes)
+
+
+_CVXcanon.VARIABLE_swigconstant(_CVXcanon)
+VARIABLE = _CVXcanon.VARIABLE
+
+_CVXcanon.PROMOTE_swigconstant(_CVXcanon)
+PROMOTE = _CVXcanon.PROMOTE
+
+_CVXcanon.MUL_swigconstant(_CVXcanon)
+MUL = _CVXcanon.MUL
+
+_CVXcanon.RMUL_swigconstant(_CVXcanon)
+RMUL = _CVXcanon.RMUL
+
+_CVXcanon.MUL_ELEM_swigconstant(_CVXcanon)
+MUL_ELEM = _CVXcanon.MUL_ELEM
+
+_CVXcanon.DIV_swigconstant(_CVXcanon)
+DIV = _CVXcanon.DIV
+
+_CVXcanon.SUM_swigconstant(_CVXcanon)
+SUM = _CVXcanon.SUM
+
+_CVXcanon.NEG_swigconstant(_CVXcanon)
+NEG = _CVXcanon.NEG
+
+_CVXcanon.INDEX_swigconstant(_CVXcanon)
+INDEX = _CVXcanon.INDEX
+
+_CVXcanon.TRANSPOSE_swigconstant(_CVXcanon)
+TRANSPOSE = _CVXcanon.TRANSPOSE
+
+_CVXcanon.SUM_ENTRIES_swigconstant(_CVXcanon)
+SUM_ENTRIES = _CVXcanon.SUM_ENTRIES
+
+_CVXcanon.TRACE_swigconstant(_CVXcanon)
+TRACE = _CVXcanon.TRACE
+
+_CVXcanon.RESHAPE_swigconstant(_CVXcanon)
+RESHAPE = _CVXcanon.RESHAPE
+
+_CVXcanon.DIAG_VEC_swigconstant(_CVXcanon)
+DIAG_VEC = _CVXcanon.DIAG_VEC
+
+_CVXcanon.DIAG_MAT_swigconstant(_CVXcanon)
+DIAG_MAT = _CVXcanon.DIAG_MAT
+
+_CVXcanon.UPPER_TRI_swigconstant(_CVXcanon)
+UPPER_TRI = _CVXcanon.UPPER_TRI
+
+_CVXcanon.CONV_swigconstant(_CVXcanon)
+CONV = _CVXcanon.CONV
+
+_CVXcanon.HSTACK_swigconstant(_CVXcanon)
+HSTACK = _CVXcanon.HSTACK
+
+_CVXcanon.VSTACK_swigconstant(_CVXcanon)
+VSTACK = _CVXcanon.VSTACK
+
+_CVXcanon.SCALAR_CONST_swigconstant(_CVXcanon)
+SCALAR_CONST = _CVXcanon.SCALAR_CONST
+
+_CVXcanon.DENSE_CONST_swigconstant(_CVXcanon)
+DENSE_CONST = _CVXcanon.DENSE_CONST
+
+_CVXcanon.SPARSE_CONST_swigconstant(_CVXcanon)
+SPARSE_CONST = _CVXcanon.SPARSE_CONST
+
+_CVXcanon.NO_OP_swigconstant(_CVXcanon)
+NO_OP = _CVXcanon.NO_OP
+
+_CVXcanon.KRON_swigconstant(_CVXcanon)
+KRON = _CVXcanon.KRON
+class LinOp(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, LinOp, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, LinOp, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["type"] = _CVXcanon.LinOp_type_set
+    __swig_getmethods__["type"] = _CVXcanon.LinOp_type_get
+    if _newclass:
+        type = _swig_property(_CVXcanon.LinOp_type_get, _CVXcanon.LinOp_type_set)
+    __swig_setmethods__["size"] = _CVXcanon.LinOp_size_set
+    __swig_getmethods__["size"] = _CVXcanon.LinOp_size_get
+    if _newclass:
+        size = _swig_property(_CVXcanon.LinOp_size_get, _CVXcanon.LinOp_size_set)
+    __swig_setmethods__["args"] = _CVXcanon.LinOp_args_set
+    __swig_getmethods__["args"] = _CVXcanon.LinOp_args_get
+    if _newclass:
+        args = _swig_property(_CVXcanon.LinOp_args_get, _CVXcanon.LinOp_args_set)
+    __swig_setmethods__["sparse"] = _CVXcanon.LinOp_sparse_set
+    __swig_getmethods__["sparse"] = _CVXcanon.LinOp_sparse_get
+    if _newclass:
+        sparse = _swig_property(_CVXcanon.LinOp_sparse_get, _CVXcanon.LinOp_sparse_set)
+    __swig_setmethods__["sparse_data"] = _CVXcanon.LinOp_sparse_data_set
+    __swig_getmethods__["sparse_data"] = _CVXcanon.LinOp_sparse_data_get
+    if _newclass:
+        sparse_data = _swig_property(_CVXcanon.LinOp_sparse_data_get, _CVXcanon.LinOp_sparse_data_set)
+    __swig_setmethods__["dense_data"] = _CVXcanon.LinOp_dense_data_set
+    __swig_getmethods__["dense_data"] = _CVXcanon.LinOp_dense_data_get
+    if _newclass:
+        dense_data = _swig_property(_CVXcanon.LinOp_dense_data_get, _CVXcanon.LinOp_dense_data_set)
+    __swig_setmethods__["slice"] = _CVXcanon.LinOp_slice_set
+    __swig_getmethods__["slice"] = _CVXcanon.LinOp_slice_get
+    if _newclass:
+        slice = _swig_property(_CVXcanon.LinOp_slice_get, _CVXcanon.LinOp_slice_set)
+
+    def __init__(self):
+        this = _CVXcanon.new_LinOp()
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+
+    def has_constant_type(self):
+        return _CVXcanon.LinOp_has_constant_type(self)
+
+    def set_dense_data(self, matrix):
+        return _CVXcanon.LinOp_set_dense_data(self, matrix)
+
+    def set_sparse_data(self, data, row_idxs, col_idxs, rows, cols):
+        return _CVXcanon.LinOp_set_sparse_data(self, data, row_idxs, col_idxs, rows, cols)
+    __swig_destroy__ = _CVXcanon.delete_LinOp
+    __del__ = lambda self: None
+LinOp_swigregister = _CVXcanon.LinOp_swigregister
+LinOp_swigregister(LinOp)
+cvar = _CVXcanon.cvar
+CONSTANT_ID = cvar.CONSTANT_ID
+
+class ProblemData(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ProblemData, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ProblemData, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["V"] = _CVXcanon.ProblemData_V_set
+    __swig_getmethods__["V"] = _CVXcanon.ProblemData_V_get
+    if _newclass:
+        V = _swig_property(_CVXcanon.ProblemData_V_get, _CVXcanon.ProblemData_V_set)
+    __swig_setmethods__["I"] = _CVXcanon.ProblemData_I_set
+    __swig_getmethods__["I"] = _CVXcanon.ProblemData_I_get
+    if _newclass:
+        I = _swig_property(_CVXcanon.ProblemData_I_get, _CVXcanon.ProblemData_I_set)
+    __swig_setmethods__["J"] = _CVXcanon.ProblemData_J_set
+    __swig_getmethods__["J"] = _CVXcanon.ProblemData_J_get
+    if _newclass:
+        J = _swig_property(_CVXcanon.ProblemData_J_get, _CVXcanon.ProblemData_J_set)
+    __swig_setmethods__["const_vec"] = _CVXcanon.ProblemData_const_vec_set
+    __swig_getmethods__["const_vec"] = _CVXcanon.ProblemData_const_vec_get
+    if _newclass:
+        const_vec = _swig_property(_CVXcanon.ProblemData_const_vec_get, _CVXcanon.ProblemData_const_vec_set)
+    __swig_setmethods__["id_to_col"] = _CVXcanon.ProblemData_id_to_col_set
+    __swig_getmethods__["id_to_col"] = _CVXcanon.ProblemData_id_to_col_get
+    if _newclass:
+        id_to_col = _swig_property(_CVXcanon.ProblemData_id_to_col_get, _CVXcanon.ProblemData_id_to_col_set)
+    __swig_setmethods__["const_to_row"] = _CVXcanon.ProblemData_const_to_row_set
+    __swig_getmethods__["const_to_row"] = _CVXcanon.ProblemData_const_to_row_get
+    if _newclass:
+        const_to_row = _swig_property(_CVXcanon.ProblemData_const_to_row_get, _CVXcanon.ProblemData_const_to_row_set)
+
+    def getV(self, values):
+        return _CVXcanon.ProblemData_getV(self, values)
+
+    def getI(self, values):
+        return _CVXcanon.ProblemData_getI(self, values)
+
+    def getJ(self, values):
+        return _CVXcanon.ProblemData_getJ(self, values)
+
+    def getConstVec(self, values):
+        return _CVXcanon.ProblemData_getConstVec(self, values)
+
+    def __init__(self):
+        this = _CVXcanon.new_ProblemData()
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+    __swig_destroy__ = _CVXcanon.delete_ProblemData
+    __del__ = lambda self: None
+ProblemData_swigregister = _CVXcanon.ProblemData_swigregister
+ProblemData_swigregister(ProblemData)
+
+class SolverOptions(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, SolverOptions, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, SolverOptions, name)
+    __repr__ = _swig_repr
+
+    def __init__(self):
+        this = _CVXcanon.new_SolverOptions()
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+    __swig_destroy__ = _CVXcanon.delete_SolverOptions
+    __del__ = lambda self: None
+SolverOptions_swigregister = _CVXcanon.SolverOptions_swigregister
+SolverOptions_swigregister(SolverOptions)
+
+class Solution(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, Solution, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, Solution, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["values"] = _CVXcanon.Solution_values_set
+    __swig_getmethods__["values"] = _CVXcanon.Solution_values_get
+    if _newclass:
+        values = _swig_property(_CVXcanon.Solution_values_get, _CVXcanon.Solution_values_set)
+    __swig_setmethods__["objective_value"] = _CVXcanon.Solution_objective_value_set
+    __swig_getmethods__["objective_value"] = _CVXcanon.Solution_objective_value_get
+    if _newclass:
+        objective_value = _swig_property(_CVXcanon.Solution_objective_value_get, _CVXcanon.Solution_objective_value_set)
+
+    def __init__(self):
+        this = _CVXcanon.new_Solution()
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+    __swig_destroy__ = _CVXcanon.delete_Solution
+    __del__ = lambda self: None
+Solution_swigregister = _CVXcanon.Solution_swigregister
+Solution_swigregister(Solution)
+
+class Solver(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, Solver, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, Solver, name)
+
+    def __init__(self, *args, **kwargs):
+        raise AttributeError("No constructor defined - class is abstract")
+    __repr__ = _swig_repr
+    __swig_destroy__ = _CVXcanon.delete_Solver
+    __del__ = lambda self: None
+
+    def solve(self, problem):
+        return _CVXcanon.Solver_solve(self, problem)
+Solver_swigregister = _CVXcanon.Solver_swigregister
+Solver_swigregister(Solver)
+
+
+def solve(problem, solver_options):
+    return _CVXcanon.solve(problem, solver_options)
+solve = _CVXcanon.solve
 # This file is compatible with both classic and new-style classes.
 
 

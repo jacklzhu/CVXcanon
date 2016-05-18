@@ -18,6 +18,7 @@
 %{
 	#define SWIG_FILE_WITH_INIT
 	#include "CVXcanon.hpp"
+        #include "Solver.hpp"
 %}
 
 %include "numpy.i"
@@ -37,12 +38,13 @@
 	(double *row_idxs, int rows_len),
 	(double *col_idxs, int cols_len)};
 
-%include "LinOp.hpp"
-
-/* Typemap for the getV, getI, getJ, and getConstVec C++ routines in 
+/* Typemap for the getV, getI, getJ, and getConstVec C++ routines in
 	 problemData.hpp */
 %apply (double* ARGOUT_ARRAY1, int DIM1) {(double* values, int num_values)}
-%include "ProblemData.hpp"
+
+/* Typemap for Solver::get_value */
+%apply (int variable_id, int DIM1, int DIM2, double* ARGOUT_ARRAY1) {
+  (int variable_id, int rows, int cols, double* value)};
 
 /* Useful wrappers for the LinOp class */
 namespace std {
@@ -52,8 +54,21 @@ namespace std {
    %template(DoubleVector2D) vector< vector<double> >;
    %template(IntIntMap) map<int, int>;
    %template(LinOpVector) vector< LinOp * >;
+   %template(ExpressionVector) vector<Expression>;
 }
 
-/* Wrapper for entry point into CVXCanon Library */
-ProblemData build_matrix(std::vector< LinOp* > constraints, std::map<int, int> id_to_col);
-ProblemData build_matrix(std::vector< LinOp* > constraints, std::map<int, int> id_to_col, std::vector<int> constr_offsets);
+/* Modify typemaps for for expression attributes so they aren't gc'd */
+%typemap(out) ExpressionAttributes* {
+  $result = SWIG_NewPointerObj(SWIG_as_voidptr(result), $1_descriptor, 0 );
+}
+%apply ExpressionAttributes* {
+  ConstAttributes*,
+  ReshapeAttributes*,
+  PNormAttributes*,
+  VarAttributes* };
+
+%include "CVXcanon.hpp"
+%include "Expression.hpp"
+%include "LinOp.hpp"
+%include "ProblemData.hpp"
+%include "Solver.hpp"

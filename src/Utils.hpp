@@ -15,12 +15,35 @@
 
 // Some useful defines for Matricies/etc.
 
+#ifndef UTILS_H
+#define UTILS_H
+
+#include <unordered_map>
+
 #include "../include/Eigen/Sparse"
 #include "../include/Eigen/Core"
 
 #define NULL_MATRIX Eigen::SparseMatrix<double>(0,0)
 
+typedef Eigen::SparseMatrix<double> SparseMatrix;
+typedef Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic> DenseMatrix;
+typedef Eigen::Matrix<double, Eigen::Dynamic, 1> DenseVector;
+
+// TODO(mwytock): Replace these types with DenseVector/SparseMatrix above
 typedef Eigen::Matrix<int, Eigen::Dynamic, 1> Vector;
 typedef Eigen::SparseMatrix<double> Matrix;
+
 typedef std::map<int, Matrix> CoeffMap;
 typedef Eigen::Triplet<double> Triplet;
+
+template<typename K, typename V>
+V find_or_die(const std::unordered_map<K, V>& map, K key) {
+  auto iter = map.find(key);
+  assert(iter != map.end());
+  return iter->second;
+}
+
+std::string string_printf(const std::string fmt_str, ...);
+
+
+#endif  // UTILS_H
