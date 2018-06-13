@@ -26,7 +26,7 @@ setup(
     package_dir={'': 'src/python'},
     py_modules=['canonInterface', 'CVXcanon', '_version__'],
     description='A low-level library to perform the matrix building step in cvxpy, a convex optimization modeling software.',
-    license='GPLv3',
+    license='Apache-2.0',
     url='https://github.com/jacklzhu/CVXcanon',
     install_requires=[
         'numpy',
